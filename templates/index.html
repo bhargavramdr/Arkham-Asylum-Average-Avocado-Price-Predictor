@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avocado Price Predictor</title>
+</head>
+
+
+<body background="/static/Arkham_Asylum.jpg">
+    <div style="color: rgb(65, 65, 99)">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h3>Are you the newly appointed Arkham Asylum Wardan. And now you want to buy avocado for everyone in
+                the asylum for cheapest price possible??? Then Congratulations!!!
+                You are in the right place.
+            </h3>
+
+            <h3>Enter the Year</h3>
+            <input id="first" name="year" type="number">
+
+
+            <h3>From which county do want to import the avocado??</h3><br><select name="region" id="second"
+                required="required">
+                <option value="Albany">Albany</option>
+                <option value="Atlanta">Atlanta</option>
+                <option value="BaltimoreWashington">BaltimoreWashington</option>
+                <option value="Boise">Boise</option>
+                <option value="Boston">Boston</option>
+                <option value="BuffaloRochester">BuffaloRochester</option>
+                <option value="California">California</option>
+                <option value="Charlotte">Charlotte</option>
+                <option value="Chicago">Chicago</option>
+                <option value="CincinnatiDayton">CincinnatiDayton</option>
+
+            </select>
+
+            <h3>Type of Avocado</h3><br><select name="type" id="third" required="required">
+                <option value="conventional">conventional</option>
+                <option value="organic">organic</option>
+            </select>
+
+            <h3>Enter the Total Volume of Avocado import.</h3>
+            <input id="fourth" name="Total_Volume" type="number" placeholder="from 5000 to 140000 cubic meters">
+
+            <h3>Enter the Total Bags of Avocado</h3>
+            <input id="fifth" name="Total_Bags" type="number" placeholder="from 1000 to 15000 Bags">
+
+
+
+            <br><br><button id="sub" type="submit ">Calculate the Avocado price per avocado in the preson.</button>
+            <br>
+
+
+
+
+        </form>
+
+
+
+        <br><br>
+        <h3>{{prediction_text}}<h3>
+    </div>
