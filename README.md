@@ -6,4 +6,9 @@ the asylum for cheapest price possible??? Then Congratulations!!!
 You are in the right place.
 
 
-Here is the Avocado Average price predictor considering the factors like import region, number of bags, Volume of the total import ext.
+Accurate the Avocado Average price predictor considering the factors like import region, number of bags, Volume of the total import ext.
+
+### Here's how the site looks:
+![Screenshot (194)](https://user-images.githubusercontent.com/72303641/139556890-8dd67c95-00d5-4107-a623-6770c4ed6710.png)
+
+
